@@ -31,6 +31,15 @@ router.get('/', function (req, res, next) {
         res.render('index', {title: 'Express', data: result});
     })
 });
+
+router.get('/getData', function (req, res, next) {
+
+    STUDENT.find({}, function (error, result) {
+        if (error) throw error;
+        console.log(result.length)
+        res.render('getData', {title: 'Data', data: result});
+    })
+});
 router.get('/delete/', function (req, res) {
 
     const id = req.query.id;
