@@ -5,7 +5,7 @@ const {Schema} = require("mongoose");
 const e = require("express");
 //  bước 1 : kết nối vào csdl qua link với username, password
 // tên của csdl là demo
-const uri = "mongodb+srv://mob402:minh0705@mob402.hwjr4.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://minhtt:minhtt@assignment402.liddpzr.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(uri).catch(err => console.log(err.toString()));
 
 // bước 2 : khai báo kiểu dữ liệu - khung của dữ liệu - model và collection
