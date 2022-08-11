@@ -6,3 +6,30 @@ body {
 a {
   color: #00B7FF;
 }
+
+.images {
+  width: 300px;
+  height: 400px;
+}
+
+.linkTxt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display:inline-flex;
+  clear: both;
+}
+.title {
+
+}

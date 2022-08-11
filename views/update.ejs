@@ -6,7 +6,6 @@
 </head>
 <body>
 <h1><%= title %></h1>
-<p>Welcome to <%= title %></p>
 
 <form action="/update" method="post" enctype="application/x-www-form-urlencoded">
     <hr>
@@ -14,6 +13,7 @@
     <div>name : <%= data.name %></div>
     <div>Link : <%= data.number %></div>
     <div>Description : <%= data.address %></div>
+
     <hr>
     <!--input voi id để truyền lên id mà ko cho người dùng sửa
     nên đặt là hidden-->
