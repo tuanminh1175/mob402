@@ -40,6 +40,13 @@ router.get('/getData', function (req, res, next) {
         res.render('getData', {title: 'Data', data: result});
     })
 });
+
+router.get('/listData',function (rep,res) {
+    STUDENT.find({},function (err,data) {
+        res.send(data)
+    })
+});
+
 router.get('/delete/', function (req, res) {
 
     const id = req.query.id;
